@@ -17,11 +17,12 @@ struct BarcodeScannerView: View {
                 
                 Label("Scanned Barcode", systemImage: "barcode.viewfinder")
                     .font(.title)
-                Text("Not yet scanned")
-                    .font(.title2)
-                    .bold()
-                    .foregroundStyle(.green)
-                    .padding()
+                HStack{  Text("Not yet scanned")
+                        .font(.title2)
+                        .bold()
+                        .foregroundStyle(.green)
+                        .padding()
+                Button("Scan New Barcode", action: {})}
             }
             .navigationTitle("Barcode Scanner")
         }
